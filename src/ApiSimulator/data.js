@@ -34,5 +34,5 @@ export default [
         date:'14/11/2022',
         site:'Argentina, Villa 31',
         category:'Sociedad'
-    },
+    }
 ]
