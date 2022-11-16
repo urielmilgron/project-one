@@ -1,16 +1,17 @@
 import React from "react"
 import { Image, View, Text, StyleSheet } from "react-native"
+import StyleText from "./StyledText"
 
 const NoticeItem = (props) => {
     const {id, image, title, site, date} = props
 return (
     <View key={id} style={styles.card}>
     <Image style={styles.imageCard} source={{uri:image}}/>
-    <Text style={styles.title}>
+    <StyleText bold title center>
     {title}
-    </Text>
-    {site? <Text>{site}</Text> : ''}
-    <Text>{date}</Text>
+    </StyleText>
+    {site && <StyleText>Lugar: {site}</StyleText>}
+    <StyleText small>{date}</StyleText>
     </View>
 )
 }
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
     card:{
       margin:20,
       marginBottom:40,
-      backgroundColor:'"aliceblue"',
+      backgroundColor:'#BEBDBF',
       justifyContent:"space-around",
       alignItems:"center",
       height:480,
@@ -38,11 +39,6 @@ const styles = StyleSheet.create({
           height: 300,
           borderRadius:10
         },
-        title:{
-          fontWeight:"bold",
-          width:280,
-          textAlign:"center",
-        }
   
   })
   export default NoticeItem
