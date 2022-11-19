@@ -1,17 +1,21 @@
 import React from "react"
 import { Image, View, Text, StyleSheet } from "react-native"
-import StyleText from "./StyledText"
+import StyledText from "./StyledText"
 
 const NoticeItem = (props) => {
     const {id, image, title, site, date} = props
 return (
     <View key={id} style={styles.card}>
+    <View style={{width:'50%', height:'100%', alignItems:'center', justifyContent:'center'}}>
     <Image style={styles.imageCard} source={{uri:image}}/>
-    <StyleText bold title center>
+    </View>
+    <View style={{height:'100%', width:'50%', justifyContent:'space-evenly'}}>
+    <StyledText>
     {title}
-    </StyleText>
-    {site && <StyleText>Lugar: {site}</StyleText>}
-    <StyleText small>{date}</StyleText>
+    </StyledText>
+    {site && <StyledText fontWeight='normal'>Lugar: {site}</StyledText>}
+    </View>
+    {/* <StyledText fontWeight='normal' fontSize='small'>{date}</StyledText> */}
     </View>
 )
 }
@@ -19,10 +23,11 @@ const styles = StyleSheet.create({
     card:{
       margin:20,
       marginBottom:40,
-      backgroundColor:'#BEBDBF',
+      backgroundColor:'#F2F2F2',
       justifyContent:"space-around",
       alignItems:"center",
-      height:480,
+      height:170,
+      flexDirection:'row',
       borderRadius:10,
       shadowColor: "#000",
       shadowOffset: {
@@ -35,8 +40,8 @@ const styles = StyleSheet.create({
       elevation: 5,
     },
       imageCard: {
-          width: 300,
-          height: 300,
+          width: 160,
+          height: 160,
           borderRadius:10
         },
   

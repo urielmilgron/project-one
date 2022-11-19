@@ -5,36 +5,37 @@ import theme from "../theme";
 const styles = StyleSheet.create({
     text:{
         fontSize:theme.sizes.body,
-        color:theme.colors.textPrimary,
+        fontWeight: theme.fontWeights.bold,
+        textAlign: "center"
     },
-    bold:{
-        fontWeight:theme.fontWeights.bold
+    colorPrimary: {
+        color: theme.colors.textPrimary
     },
-    big:{
-        fontSize:theme.sizes.title
+    colorSecondary: {
+      color: theme.colors.textSecondary  
     },
-    small:{
+    fontSmall:{
         fontSize:theme.sizes.date
     },
-    center:{
-        textAlign:"center"
+    normalWeight:{
+        fontWeight:theme.fontWeights.normal
     },
     title: {
         width: 280
     }
 })
 
-export default function StyleText({bold, big, children, center, small, title}){
+export default function StyleText({color, children, fontSize, title, fontWeight, ...restOfProps}){
     const textStyle = [
         styles.text,
-        bold && styles.bold,
-        big && styles.big,
-        small && styles.small,
-        center && styles.center,
+        color === 'primary' && styles.colorPrimary,
+        color === 'secondary' && styles.colorSecondary,
+        fontWeight === 'normal' && styles.normalWeight,
+        fontSize === 'small' && styles.fontSmall,
         title && styles.title
     ]
     return(
-        <Text style={textStyle}>
+        <Text style={textStyle} {...restOfProps}>
             {children}
         </Text>
     )
