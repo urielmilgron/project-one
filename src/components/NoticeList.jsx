@@ -5,7 +5,7 @@ import NoticeItem from "./NoticeItem";
 
 const NoticeList = () => {
   return (
-    <FlatList data={data} renderItem={({item: notice}) => (
+    <FlatList contentContainerStyle={styles.container} data={data} renderItem={({item: notice}) => (
      <NoticeItem {...notice}/>
     )}>
 
@@ -13,4 +13,11 @@ const NoticeList = () => {
   );
 };
 
+const styles = StyleSheet.create({
+  container:{
+    alignItems:'center',
+    minHeight:750,
+    justifyContent:'space-around'
+  }
+})
 export default NoticeList

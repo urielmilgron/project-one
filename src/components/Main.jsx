@@ -5,13 +5,14 @@ import NoticeList from './NoticeList';
 
 const Main = () => {
     return (
-        <View style={{marginTop:Constants.statusBarHeight}}>
-            <Text>Random Blog</Text>
+        <View style={{marginTop:Constants.statusBarHeight, backgroundColor:'#F2F2F2', justifyContent:'center', alignItems:'center'}}>
             <NoticeList/>
         </View>
     );
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+
+})
 
 export default Main;

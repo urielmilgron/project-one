@@ -6,7 +6,7 @@ export default [
         image:'https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/05/30122005/hoteles-lujo-destacada-1.jpg',
         date:'14/11/2022',
         site:'Marrakech',
-        assessment:5
+        assessment:5450
     },
     {
         id:'2',
@@ -15,7 +15,7 @@ export default [
         image:'https://www.infobae.com/new-resizer/YgU-yTAX1P6MrXJMHAM9VXMLpPg=/1200x533/filters:format(webp):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/05/05115245/hoteles-lujo-bvlgari-3.jpg',
         date:'14/11/2022',
         site:'Dubai',
-        assessment:4
+        assessment:4340
     },
     {
         id:'3',
@@ -24,7 +24,7 @@ export default [
         image:'https://www.infobae.com/new-resizer/1xFnIuRuILDEDBV1NyyqfzF2NeE=/1200x675/filters:format(webp):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/05/05115211/hoteles-lujo-st-regis-destacada.jpg',
         date:'14/11/2022',
         site:'India',
-        assessment:4
+        assessment:40000
     },
     {
         id:'4',
@@ -33,6 +33,6 @@ export default [
         image:'https://www.infobae.com/new-resizer/lb-rCHmMizTAM1y11UaOJW2kfNc=/1200x900/filters:format(webp):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/05/05133641/hoteles-lujo-atenas-4.jpg',
         date:'14/11/2022',
         site:'Atenas',
-        assessment:3
+        assessment:34402
     }
 ]
