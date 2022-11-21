@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     text:{
         fontSize:theme.sizes.body,
         fontWeight: theme.fontWeights.bold,
-        textAlign: "center"
+    
     },
     colorPrimary: {
         color: theme.colors.textPrimary
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     }
 })
 
-export default function StyleText({color, children, fontSize, title, fontWeight, ...restOfProps}){
+export default function StyledText({color, children, fontSize, title, fontWeight, ...restOfProps}){
     const textStyle = [
         styles.text,
         color === 'primary' && styles.colorPrimary,

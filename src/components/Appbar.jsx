@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
 export default function Appbar() {
   return (
     <View style={styles.appBar}>
-      <StyledText style={styles.text}>Destinos</StyledText>
+      <StyledText color='secondary'>Destinos</StyledText>
     </View>
   )
 }
