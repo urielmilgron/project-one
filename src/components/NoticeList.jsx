@@ -16,7 +16,6 @@ const NoticeList = () => {
 const styles = StyleSheet.create({
   container:{
     alignItems:'center',
-    minHeight:750,
     justifyContent:'space-around'
   }
 })

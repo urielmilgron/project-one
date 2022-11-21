@@ -48,7 +48,6 @@ const NoticeItem = (props) => {
           </TouchableHighlight>
         </View>
       </View>
-      {/* <StyledText fontWeight='normal' fontSize='small'>{date}</StyledText> */}
     </View>
   );
 };
@@ -83,6 +82,7 @@ const styles = StyleSheet.create({
     width: "60%",
     alignItems: "center",
     backgroundColor: "#2196F3",
+    borderRadius: 3
   },
   buttonText: {
     textAlign: "center",

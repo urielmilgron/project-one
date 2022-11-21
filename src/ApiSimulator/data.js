@@ -28,7 +28,7 @@ export default [
     },
     {
         id:'4',
-        title:'Hotel Grande Bretagne, a Luxury Collection',
+        title:'Hotel Grande Bretagne',
         paragraph:'La urbanización de la villa 31 de Retiro llegó a Londres, a un prestigioso medio, que analizó el caso y lo comparó con otras políticas similares en la región. “El asentamiento solía tener una sola calle asfaltada. Al día de hoy, todas las calles están pavimentadas. En 2016, no existían escuelas públicas en el barrio y ahora hay tres. Desde 2019 llegan los colectivos y un banco abrió allí”, detalló The Economist en una publicación de la semana pasada que relata el proceso de integración iniciado en 2016.',
         image:'https://www.infobae.com/new-resizer/lb-rCHmMizTAM1y11UaOJW2kfNc=/1200x900/filters:format(webp):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/05/05133641/hoteles-lujo-atenas-4.jpg',
         date:'14/11/2022',

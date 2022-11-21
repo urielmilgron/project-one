@@ -1,13 +1,25 @@
-import { View, Text } from 'react-native'
 import React from 'react'
-import StyleText from './StyledText'
+import { View, StyleSheet } from 'react-native'
+import StyledText from './StyledText'
+import Constants from 'expo-constants'
+import theme from '../theme'
+
+const styles = StyleSheet.create({
+  appBar:{
+    backgroundColor:theme.appBar.primary,
+    paddingTop:Constants.statusBarHeight + 10, //Le decimos que depende del status bar y también que le sume 10px
+    paddingBottom:10,
+    paddingLeft:10,
+  }, text:{
+    color:theme.appBar.textPrimary
+  }
+})
+
 
 export default function Appbar() {
   return (
-    <View>
-     <StyleText>
-        Destinos
-     </StyleText>
+    <View style={styles.appBar}>
+      <StyledText style={styles.text}>Destinos</StyledText>
     </View>
   )
 }
